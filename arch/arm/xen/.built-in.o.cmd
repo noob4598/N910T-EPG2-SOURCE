@@ -1,0 +1,1 @@
+cmd_arch/arm/xen/built-in.o :=  /home/gene/Android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o arch/arm/xen/built-in.o arch/arm/xen/enlighten.o arch/arm/xen/hypercall.o arch/arm/xen/grant-table.o 

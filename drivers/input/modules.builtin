@@ -1,0 +1,8 @@
+kernel/drivers/input/input-core.ko
+kernel/drivers/input/input_booster.ko
+kernel/drivers/input/keyboard/atkbd.ko
+kernel/drivers/input/keyboard/cypress_touchkey_t/cypress-touchkey.ko
+kernel/drivers/input/keyboard/cypress_touchkey_t/cy8cmbr_swd.ko
+kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_PacketLayer.ko
+kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_UpperPacketLayer.ko
+kernel/drivers/input/mouse/psmouse.ko
