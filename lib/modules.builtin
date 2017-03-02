@@ -1,0 +1,2 @@
+kernel/lib/bitrev.ko
+kernel/lib/crc32.ko
