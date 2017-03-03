@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 kernel/drivers/ata/libata.ko
 kernel/drivers/ata/ahci_platform.ko
 kernel/drivers/ata/libahci.ko
@@ -37,10 +38,26 @@ kernel/drivers/esoc/esoc-mdm-drv.ko
 kernel/drivers/extcon/extcon-class.ko
 kernel/drivers/extcon/extcon-max77828.ko
 kernel/drivers/extcon/extcon-max77843.ko
+=======
+kernel/drivers/base/firmware_class.ko
+kernel/drivers/battery/sec_battery.ko
+kernel/drivers/battery/max77843_fuelgauge.ko
+kernel/drivers/battery/max77843_charger.ko
+kernel/drivers/cpufreq/cpufreq_stats.ko
+kernel/drivers/cpufreq/cpufreq_interactive.ko
+kernel/drivers/cpufreq/cpufreq_persistent_stats.ko
+kernel/drivers/devfreq/governor_performance.ko
+kernel/drivers/devfreq/governor_powersave.ko
+kernel/drivers/devfreq/governor_userspace.ko
+kernel/drivers/devfreq/governor_bw_hwmon.ko
+kernel/drivers/devfreq/governor_cache_hwmon.ko
+kernel/drivers/extcon/extcon-class.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/fingerprint/fingerprint_sysfs.ko
 kernel/drivers/fingerprint/vfs61xx.ko
 kernel/drivers/gpio/gpio-msm-common.ko
 kernel/drivers/gpio/gpio-msm-v3.ko
+<<<<<<< HEAD
 kernel/drivers/gpio/qpnp-pin.ko
 kernel/drivers/gpu/msm/msm_kgsl_core.ko
 kernel/drivers/gpu/msm/msm_adreno.ko
@@ -49,11 +66,17 @@ kernel/drivers/hid/uhid.ko
 kernel/drivers/hid/hid-generic.ko
 kernel/drivers/hid/hid-a4tech.ko
 kernel/drivers/hid/hid-axff.ko
+=======
+kernel/drivers/hid/hid.ko
+kernel/drivers/hid/hid-generic.ko
+kernel/drivers/hid/hid-a4tech.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/hid/hid-apple.ko
 kernel/drivers/hid/hid-belkin.ko
 kernel/drivers/hid/hid-cherry.ko
 kernel/drivers/hid/hid-chicony.ko
 kernel/drivers/hid/hid-cypress.ko
+<<<<<<< HEAD
 kernel/drivers/hid/hid-dr.ko
 kernel/drivers/hid/hid-emsff.ko
 kernel/drivers/hid/hid-elecom.ko
@@ -132,10 +155,24 @@ kernel/drivers/input/input_booster.ko
 kernel/drivers/input/joystick/xpad.ko
 kernel/drivers/input/keyboard/atkbd.ko
 kernel/drivers/input/keyboard/gpio_keys.ko
+=======
+kernel/drivers/hid/hid-ezkey.ko
+kernel/drivers/hid/hid-kensington.ko
+kernel/drivers/hid/hid-logitech.ko
+kernel/drivers/hid/hid-microsoft.ko
+kernel/drivers/hid/hid-monterey.ko
+kernel/drivers/hwmon/hwmon.ko
+kernel/drivers/iio/industrialio.ko
+kernel/drivers/iio/kfifo_buf.ko
+kernel/drivers/input/input-core.ko
+kernel/drivers/input/input_booster.ko
+kernel/drivers/input/keyboard/atkbd.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/input/keyboard/cypress_touchkey_t/cypress-touchkey.ko
 kernel/drivers/input/keyboard/cypress_touchkey_t/cy8cmbr_swd.ko
 kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_PacketLayer.ko
 kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_UpperPacketLayer.ko
+<<<<<<< HEAD
 kernel/drivers/input/misc/gpio_event.ko
 kernel/drivers/input/misc/gpio_matrix.ko
 kernel/drivers/input/misc/gpio_input.ko
@@ -373,6 +410,15 @@ kernel/drivers/video/fb_sys_fops.ko
 kernel/drivers/video/vfb.ko
 kernel/drivers/video/backlight/lcd.ko
 kernel/drivers/video/backlight/backlight.ko
+=======
+kernel/drivers/input/mouse/psmouse.ko
+kernel/drivers/input/serio/serio.ko
+kernel/drivers/input/serio/libps2.ko
+kernel/drivers/motor/ss_vibrator.ko
+kernel/drivers/parport/parport.ko
+kernel/drivers/soc/qcom/mct.ko
+kernel/drivers/tty/serial/serial_core.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/w1/wire.ko
 kernel/drivers/w1/masters/w1-gpio-msm.ko
 kernel/drivers/w1/slaves/w1_ds28el35.ko

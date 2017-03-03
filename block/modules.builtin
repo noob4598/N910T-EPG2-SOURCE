@@ -1,4 +1,7 @@
 kernel/block/deadline-iosched.ko
 kernel/block/row-iosched.ko
 kernel/block/cfq-iosched.ko
+<<<<<<< HEAD
 kernel/block/test-iosched.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

@@ -1,5 +1,8 @@
 kernel/fs/nls/nls_base.ko
+<<<<<<< HEAD
 kernel/fs/nls/nls_cp437.ko
 kernel/fs/nls/nls_ascii.ko
 kernel/fs/nls/nls_iso8859-1.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/fs/nls/nls_utf8.ko

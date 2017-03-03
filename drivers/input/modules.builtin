@@ -1,4 +1,5 @@
 kernel/drivers/input/input-core.ko
+<<<<<<< HEAD
 kernel/drivers/input/ff-memless.ko
 kernel/drivers/input/mousedev.ko
 kernel/drivers/input/evdev.ko
@@ -8,10 +9,15 @@ kernel/drivers/input/input_booster.ko
 kernel/drivers/input/joystick/xpad.ko
 kernel/drivers/input/keyboard/atkbd.ko
 kernel/drivers/input/keyboard/gpio_keys.ko
+=======
+kernel/drivers/input/input_booster.ko
+kernel/drivers/input/keyboard/atkbd.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/input/keyboard/cypress_touchkey_t/cypress-touchkey.ko
 kernel/drivers/input/keyboard/cypress_touchkey_t/cy8cmbr_swd.ko
 kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_PacketLayer.ko
 kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_UpperPacketLayer.ko
+<<<<<<< HEAD
 kernel/drivers/input/misc/gpio_event.ko
 kernel/drivers/input/misc/gpio_matrix.ko
 kernel/drivers/input/misc/gpio_input.ko
@@ -24,3 +30,6 @@ kernel/drivers/input/touchscreen/stm/fts_fwu.ko
 kernel/drivers/input/touchscreen/wacom/wacom_i2c.ko
 kernel/drivers/input/touchscreen/wacom/wacom_i2c_flash.ko
 kernel/drivers/input/touchscreen/wacom/wacom_sec_fac.ko
+=======
+kernel/drivers/input/mouse/psmouse.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

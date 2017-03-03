@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 kernel/net/802/p8022.ko
 kernel/net/802/psnap.ko
 kernel/net/802/stp.ko
@@ -147,3 +148,9 @@ kernel/net/wireless/cfg80211.ko
 kernel/net/xfrm/xfrm_algo.ko
 kernel/net/xfrm/xfrm_user.ko
 kernel/net/xfrm/xfrm_ipcomp.ko
+=======
+kernel/net/sched/act_mirred.ko
+kernel/net/sched/sch_ingress.ko
+kernel/net/sched/sch_prio.ko
+kernel/net/sched/cls_basic.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

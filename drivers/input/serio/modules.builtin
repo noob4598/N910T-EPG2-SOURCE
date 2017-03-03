@@ -1,3 +1,6 @@
 kernel/drivers/input/serio/serio.ko
+<<<<<<< HEAD
 kernel/drivers/input/serio/serport.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/input/serio/libps2.ko

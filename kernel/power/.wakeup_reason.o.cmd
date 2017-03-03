@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 cmd_kernel/power/wakeup_reason.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,kernel/power/.wakeup_reason.o.d  -nostdinc -isystem /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(wakeup_reason)"  -D"KBUILD_MODNAME=KBUILD_STR(wakeup_reason)" -c -o kernel/power/.tmp_wakeup_reason.o kernel/power/wakeup_reason.c
+=======
+cmd_kernel/power/wakeup_reason.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/arm-linux-androideabi-gcc -Wp,-MD,kernel/power/.wakeup_reason.o.d  -nostdinc -isystem /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/../lib/gcc/arm-linux-androideabi/4.9.4/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=apcs-gnu -mno-thumb-interwork -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DDEBUG    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(wakeup_reason)"  -D"KBUILD_MODNAME=KBUILD_STR(wakeup_reason)" -c -o kernel/power/wakeup_reason.o kernel/power/wakeup_reason.c
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 
 source_kernel/power/wakeup_reason.o := kernel/power/wakeup_reason.c
 
@@ -12,7 +16,11 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
+<<<<<<< HEAD
   /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
+=======
+  /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/lib/gcc/arm-linux-androideabi/4.9.4/include/stdarg.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/linkage.h \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
@@ -96,6 +104,18 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/deferred/initcalls.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
+<<<<<<< HEAD
+=======
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+  include/uapi/linux/string.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
+  arch/arm/include/generated/asm/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/uapi/linux/kernel.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/sysinfo.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/div64.h \
@@ -115,11 +135,14 @@ deps_kernel/power/wakeup_reason.o := \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
     $(wildcard include/config/debug/preempt.h) \
+<<<<<<< HEAD
   include/linux/errno.h \
   include/uapi/linux/errno.h \
   arch/arm/include/generated/asm/errno.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/list.h \
     $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
@@ -134,6 +157,7 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/nr/cpus.h) \
     $(wildcard include/config/base/small.h) \
   include/linux/bitmap.h \
+<<<<<<< HEAD
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
   include/uapi/linux/string.h \
@@ -142,6 +166,21 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/panic/on/data/corruption.h) \
   include/linux/preempt.h \
     $(wildcard include/config/preempt.h) \
+=======
+  include/linux/bug.h \
+    $(wildcard include/config/panic/on/data/corruption.h) \
+  include/linux/cache.h \
+    $(wildcard include/config/arch/has/cache/line/size.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/cache.h \
+    $(wildcard include/config/arm/l1/cache/shift.h) \
+    $(wildcard include/config/aeabi.h) \
+  include/linux/spinlock.h \
+    $(wildcard include/config/debug/spinlock.h) \
+    $(wildcard include/config/generic/lockbreak.h) \
+    $(wildcard include/config/preempt.h) \
+    $(wildcard include/config/debug/lock/alloc.h) \
+  include/linux/preempt.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
     $(wildcard include/config/context/tracking.h) \
     $(wildcard include/config/preempt/count.h) \
     $(wildcard include/config/preempt/notifiers.h) \
@@ -167,6 +206,7 @@ deps_kernel/power/wakeup_reason.o := \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/smp.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
@@ -180,19 +220,29 @@ deps_kernel/power/wakeup_reason.o := \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock_types.h \
+=======
+  include/linux/bottom_half.h \
+  include/linux/spinlock_types.h \
+  include/linux/spinlock_types_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/msm/krait/wfe/fixup.h) \
+=======
+  include/linux/spinlock_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
+<<<<<<< HEAD
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
     $(wildcard include/config/inline/spin/lock/bh.h) \
@@ -223,6 +273,9 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/inline/write/unlock/irq.h) \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
+=======
+  include/linux/spinlock_api_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
@@ -233,6 +286,10 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
   include/asm-generic/atomic-long.h \
+<<<<<<< HEAD
+=======
+  include/asm-generic/atomic64.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/gfp.h \
     $(wildcard include/config/numa.h) \
     $(wildcard include/config/cma.h) \
@@ -334,7 +391,11 @@ deps_kernel/power/wakeup_reason.o := \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
+<<<<<<< HEAD
   include/linux/rcutree.h \
+=======
+  include/linux/rcutiny.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/workqueue.h \
     $(wildcard include/config/debug/objects/work.h) \
     $(wildcard include/config/workqueue/front.h) \
@@ -554,11 +615,14 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/seccomp/filter.h) \
   include/uapi/linux/seccomp.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/seccomp.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/unistd.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/unistd.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/rculist.h \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
@@ -650,6 +714,7 @@ deps_kernel/power/wakeup_reason.o := \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/fcntl.h \
     $(wildcard include/config/scfs/lower/pagecache/invalidation.h) \
   include/linux/err.h \
+<<<<<<< HEAD
   include/linux/cgroup_subsys.h \
     $(wildcard include/config/cgroup/debug.h) \
     $(wildcard include/config/cgroup/cpuacct.h) \
@@ -660,6 +725,8 @@ deps_kernel/power/wakeup_reason.o := \
     $(wildcard include/config/netprio/cgroup.h) \
     $(wildcard include/config/cgroup/hugetlb.h) \
     $(wildcard include/config/cgroup/bcache.h) \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/vm_event_item.h \
   include/linux/jump_label.h \
     $(wildcard include/config/jump/label.h) \
@@ -745,6 +812,10 @@ deps_kernel/power/wakeup_reason.o := \
   include/linux/vmstat.h \
     $(wildcard include/config/vm/event/counters.h) \
   include/linux/freezer.h \
+<<<<<<< HEAD
+=======
+    $(wildcard include/config/cgroup/freezer.h) \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 
 kernel/power/wakeup_reason.o: $(deps_kernel/power/wakeup_reason.o)
 

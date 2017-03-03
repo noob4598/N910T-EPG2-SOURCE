@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 kernel/drivers/usb/host/ehci-hcd.ko
 kernel/drivers/usb/host/ehci-pci.ko
 kernel/drivers/usb/host/xhci-hcd.ko
+=======
+kernel/drivers/usb/host/isp1760.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

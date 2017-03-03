@@ -100,11 +100,19 @@
 #define OFF_sdio_device_id_class 0 /* offsetof(struct sdio_device_id, class)	@ */
 #define OFF_sdio_device_id_vendor 2 /* offsetof(struct sdio_device_id, vendor)	@ */
 #define OFF_sdio_device_id_device 4 /* offsetof(struct sdio_device_id, device)	@ */
+<<<<<<< HEAD
 #define SIZE_ssb_device_id 6 /* sizeof(struct ssb_device_id)	@ */
 #define OFF_ssb_device_id_vendor 0 /* offsetof(struct ssb_device_id, vendor)	@ */
 #define OFF_ssb_device_id_coreid 2 /* offsetof(struct ssb_device_id, coreid)	@ */
 #define OFF_ssb_device_id_revision 4 /* offsetof(struct ssb_device_id, revision)	@ */
 #define SIZE_bcma_device_id 6 /* sizeof(struct bcma_device_id)	@ */
+=======
+#define SIZE_ssb_device_id 8 /* sizeof(struct ssb_device_id)	@ */
+#define OFF_ssb_device_id_vendor 0 /* offsetof(struct ssb_device_id, vendor)	@ */
+#define OFF_ssb_device_id_coreid 2 /* offsetof(struct ssb_device_id, coreid)	@ */
+#define OFF_ssb_device_id_revision 4 /* offsetof(struct ssb_device_id, revision)	@ */
+#define SIZE_bcma_device_id 8 /* sizeof(struct bcma_device_id)	@ */
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 #define OFF_bcma_device_id_manuf 0 /* offsetof(struct bcma_device_id, manuf)	@ */
 #define OFF_bcma_device_id_id 2 /* offsetof(struct bcma_device_id, id)	@ */
 #define OFF_bcma_device_id_rev 4 /* offsetof(struct bcma_device_id, rev)	@ */

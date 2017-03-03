@@ -1,4 +1,7 @@
 kernel/drivers/ata/libata.ko
+<<<<<<< HEAD
 kernel/drivers/ata/ahci_platform.ko
 kernel/drivers/ata/libahci.ko
 kernel/drivers/ata/ahci_msm.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

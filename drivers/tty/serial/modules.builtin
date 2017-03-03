@@ -1,3 +1,6 @@
 kernel/drivers/tty/serial/serial_core.ko
+<<<<<<< HEAD
 kernel/drivers/tty/serial/msm_serial_hs.ko
 kernel/drivers/tty/serial/msm_serial_hs_lite.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

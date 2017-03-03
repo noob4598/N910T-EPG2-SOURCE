@@ -1,3 +1,6 @@
+<<<<<<< HEAD
 kernel/drivers/motor/max77828_haptic.ko
 kernel/drivers/motor/max77843_haptic.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/motor/ss_vibrator.ko
