@@ -1,12 +1,8 @@
 [Dolphin]
-<<<<<<< Updated upstream
 SortFoldersFirst=false
 SortOrder=1
 SortRole=date
 Timestamp=2017,3,3,0,48,56
-=======
-Timestamp=2017,3,2,15,57,53
->>>>>>> Stashed changes
 Version=3
 
 [Settings]
