@@ -100,6 +100,7 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/have/arch/pfn/valid.h) \
     $(wildcard include/config/memory/hotplug/sparse.h) \
   include/asm-generic/getorder.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
     $(wildcard include/config/highpte.h) \
@@ -137,6 +138,8 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/tima/rkp.h) \
     $(wildcard include/config/tima/rkp/l1/tables.h) \
     $(wildcard include/config/tima/rkp/lazy/mmu.h) \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 
 arch/arm/kernel/vmlinux.lds: $(deps_arch/arm/kernel/vmlinux.lds)
 

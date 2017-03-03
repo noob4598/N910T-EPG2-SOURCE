@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 cmd_kernel/time/clocksource.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,kernel/time/.clocksource.o.d  -nostdinc -isystem /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(clocksource)"  -D"KBUILD_MODNAME=KBUILD_STR(clocksource)" -c -o kernel/time/.tmp_clocksource.o kernel/time/clocksource.c
+=======
+cmd_kernel/time/clocksource.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/arm-linux-androideabi-gcc -Wp,-MD,kernel/time/.clocksource.o.d  -nostdinc -isystem /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/../lib/gcc/arm-linux-androideabi/4.9.4/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=apcs-gnu -mno-thumb-interwork -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(clocksource)"  -D"KBUILD_MODNAME=KBUILD_STR(clocksource)" -c -o kernel/time/clocksource.o kernel/time/clocksource.c
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 
 source_kernel/time/clocksource.o := kernel/time/clocksource.c
 
@@ -105,6 +109,10 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
   include/asm-generic/atomic-long.h \
+<<<<<<< HEAD
+=======
+  include/asm-generic/atomic64.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/generic/lockbreak.h) \
@@ -140,7 +148,11 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
+<<<<<<< HEAD
   /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
+=======
+  /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/lib/gcc/arm-linux-androideabi/4.9.4/include/stdarg.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/bitops.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/bitops.h \
   include/asm-generic/bitops/non-atomic.h \
@@ -170,6 +182,13 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/deferred/initcalls.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
+<<<<<<< HEAD
+=======
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+  include/uapi/linux/string.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/uapi/linux/kernel.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/sysinfo.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/div64.h \
@@ -186,16 +205,23 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock_types.h \
   include/linux/rwlock_types.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/msm/krait/wfe/fixup.h) \
+=======
+  include/linux/spinlock_types_up.h \
+  include/linux/rwlock_types.h \
+  include/linux/spinlock_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
+<<<<<<< HEAD
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
     $(wildcard include/config/inline/spin/lock/bh.h) \
@@ -226,6 +252,9 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/inline/write/unlock/irq.h) \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
+=======
+  include/linux/spinlock_api_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/kref.h \
   include/linux/mutex.h \
     $(wildcard include/config/debug/mutexes.h) \
@@ -242,10 +271,13 @@ deps_kernel/time/clocksource.o := \
   include/linux/err.h \
   include/linux/seq_file.h \
     $(wildcard include/config/user/ns.h) \
+<<<<<<< HEAD
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
   include/uapi/linux/string.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/hotplug/cpu.h) \
@@ -417,7 +449,11 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/tiny/preempt/rcu.h) \
     $(wildcard include/config/debug/objects/rcu/head.h) \
     $(wildcard include/config/rcu/nocb/cpu.h) \
+<<<<<<< HEAD
   include/linux/rcutree.h \
+=======
+  include/linux/rcutiny.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/topology.h \
     $(wildcard include/config/sched/smt.h) \
     $(wildcard include/config/sched/mc.h) \
@@ -425,7 +461,10 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/use/percpu/numa/node/id.h) \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/smp.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
@@ -569,11 +608,14 @@ deps_kernel/time/clocksource.o := \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/seccomp/filter.h) \
   include/uapi/linux/seccomp.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/seccomp.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/unistd.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/unistd.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/rculist.h \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \

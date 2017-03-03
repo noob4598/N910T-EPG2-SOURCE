@@ -1,4 +1,5 @@
 kernel/lib/bitrev.ko
+<<<<<<< HEAD
 kernel/lib/crc-ccitt.ko
 kernel/lib/crc16.ko
 kernel/lib/crc32.ko
@@ -10,3 +11,6 @@ kernel/lib/lzo/lzo_compress.ko
 kernel/lib/lzo/lzo_decompress.ko
 kernel/lib/zlib_deflate/zlib_deflate.ko
 kernel/lib/zlib_inflate/zlib_inflate.ko
+=======
+kernel/lib/crc32.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

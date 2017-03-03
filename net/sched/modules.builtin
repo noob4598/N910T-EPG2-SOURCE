@@ -1,4 +1,5 @@
 kernel/net/sched/act_mirred.ko
+<<<<<<< HEAD
 kernel/net/sched/sch_htb.ko
 kernel/net/sched/sch_ingress.ko
 kernel/net/sched/sch_prio.ko
@@ -11,3 +12,8 @@ kernel/net/sched/em_nbyte.ko
 kernel/net/sched/em_u32.ko
 kernel/net/sched/em_meta.ko
 kernel/net/sched/em_text.ko
+=======
+kernel/net/sched/sch_ingress.ko
+kernel/net/sched/sch_prio.ko
+kernel/net/sched/cls_basic.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

@@ -1,4 +1,5 @@
 kernel/drivers/usb/usb-common.ko
+<<<<<<< HEAD
 kernel/drivers/usb/class/cdc-acm.ko
 kernel/drivers/usb/core/usbcore.ko
 kernel/drivers/usb/dwc3/dwc3.ko
@@ -36,3 +37,7 @@ kernel/drivers/usb/storage/ums-onetouch.ko
 kernel/drivers/usb/storage/ums-sddr09.ko
 kernel/drivers/usb/storage/ums-sddr55.ko
 kernel/drivers/usb/storage/ums-usbat.ko
+=======
+kernel/drivers/usb/core/usbcore.ko
+kernel/drivers/usb/host/isp1760.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

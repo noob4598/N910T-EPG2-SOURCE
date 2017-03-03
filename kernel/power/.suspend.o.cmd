@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 cmd_kernel/power/suspend.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,kernel/power/.suspend.o.d  -nostdinc -isystem /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(suspend)"  -D"KBUILD_MODNAME=KBUILD_STR(suspend)" -c -o kernel/power/.tmp_suspend.o kernel/power/suspend.c
+=======
+cmd_kernel/power/suspend.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/arm-linux-androideabi-gcc -Wp,-MD,kernel/power/.suspend.o.d  -nostdinc -isystem /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/../lib/gcc/arm-linux-androideabi/4.9.4/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=apcs-gnu -mno-thumb-interwork -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DDEBUG    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(suspend)"  -D"KBUILD_MODNAME=KBUILD_STR(suspend)" -c -o kernel/power/suspend.o kernel/power/suspend.c
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 
 source_kernel/power/suspend.o := kernel/power/suspend.c
 
@@ -37,7 +41,11 @@ deps_kernel/power/suspend.o := \
   include/uapi/linux/stddef.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/posix_types.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/posix_types.h \
+<<<<<<< HEAD
   /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
+=======
+  /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/lib/gcc/arm-linux-androideabi/4.9.4/include/stdarg.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/uapi/linux/string.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
   include/linux/delay.h \
@@ -101,6 +109,14 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/deferred/initcalls.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
+<<<<<<< HEAD
+=======
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
+  arch/arm/include/generated/asm/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/uapi/linux/kernel.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/sysinfo.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/div64.h \
@@ -140,11 +156,14 @@ deps_kernel/power/suspend.o := \
   include/asm-generic/param.h \
     $(wildcard include/config/hz.h) \
   include/uapi/asm-generic/param.h \
+<<<<<<< HEAD
   include/linux/errno.h \
   include/uapi/linux/errno.h \
   arch/arm/include/generated/asm/errno.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/console.h \
     $(wildcard include/config/hw/console.h) \
     $(wildcard include/config/tty.h) \
@@ -202,6 +221,10 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
   include/asm-generic/atomic-long.h \
+<<<<<<< HEAD
+=======
+  include/asm-generic/atomic64.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/generic/lockbreak.h) \
@@ -228,15 +251,22 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock_types.h \
   include/linux/rwlock_types.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/msm/krait/wfe/fixup.h) \
+=======
+  include/linux/spinlock_types_up.h \
+  include/linux/rwlock_types.h \
+  include/linux/spinlock_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/arm/errata/754327.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
+<<<<<<< HEAD
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
     $(wildcard include/config/inline/spin/lock/bh.h) \
@@ -267,6 +297,9 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/inline/write/unlock/irq.h) \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
+=======
+  include/linux/spinlock_api_up.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/kref.h \
   include/linux/mutex.h \
     $(wildcard include/config/debug/mutexes.h) \
@@ -378,7 +411,11 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/tiny/preempt/rcu.h) \
     $(wildcard include/config/debug/objects/rcu/head.h) \
     $(wildcard include/config/rcu/nocb/cpu.h) \
+<<<<<<< HEAD
   include/linux/rcutree.h \
+=======
+  include/linux/rcutiny.h \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/uapi/linux/sem.h \
   include/linux/ipc.h \
   include/uapi/linux/ipc.h \
@@ -398,7 +435,10 @@ deps_kernel/power/suspend.o := \
   include/linux/percpu_counter.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/smp.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
@@ -648,10 +688,13 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/no/hz/full.h) \
     $(wildcard include/config/cpu/sup/intel.h) \
   include/uapi/linux/perf_event.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/perf_event.h \
     $(wildcard include/config/hw/perf/events.h) \
   arch/arm/include/generated/asm/local64.h \
   include/asm-generic/local64.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/hrtimer.h \
     $(wildcard include/config/high/res/timers.h) \
     $(wildcard include/config/timerfd.h) \
@@ -700,7 +743,10 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/seccomp/filter.h) \
   include/uapi/linux/seccomp.h \
+<<<<<<< HEAD
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/seccomp.h \
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
   include/linux/plist.h \
@@ -789,6 +835,7 @@ deps_kernel/power/suspend.o := \
   include/linux/idr.h \
   include/linux/xattr.h \
   include/uapi/linux/xattr.h \
+<<<<<<< HEAD
   include/linux/cgroup_subsys.h \
     $(wildcard include/config/cgroup/debug.h) \
     $(wildcard include/config/cgroup/cpuacct.h) \
@@ -799,6 +846,10 @@ deps_kernel/power/suspend.o := \
     $(wildcard include/config/cgroup/hugetlb.h) \
     $(wildcard include/config/cgroup/bcache.h) \
   include/linux/freezer.h \
+=======
+  include/linux/freezer.h \
+    $(wildcard include/config/cgroup/freezer.h) \
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
   include/linux/syscore_ops.h \
   include/linux/rtc.h \
     $(wildcard include/config/rtc/auto/pwron.h) \

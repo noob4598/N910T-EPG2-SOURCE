@@ -1,2 +1,5 @@
+<<<<<<< HEAD
 kernel/drivers/net/slip/slip.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
 kernel/drivers/net/slip/slhc.ko

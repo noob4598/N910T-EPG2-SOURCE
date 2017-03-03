@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 kernel/drivers/md/dm-mod.ko
 kernel/drivers/md/dm-crypt.ko
+=======
+kernel/drivers/md/md-mod.ko
+kernel/drivers/md/dm-mod.ko
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K

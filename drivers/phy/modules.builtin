@@ -1,2 +1,5 @@
 kernel/drivers/phy/phy-core.ko
+<<<<<<< HEAD
 kernel/drivers/phy/phy-msm-sata.ko
+=======
+>>>>>>> 44a99bb... Enable mhi config thanks to @Hani-K
