@@ -1,0 +1,1 @@
+cmd_drivers/extcon/built-in.o :=  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o drivers/extcon/built-in.o drivers/extcon/extcon-class.o drivers/extcon/extcon-max77828.o drivers/extcon/extcon-max77843.o 

@@ -1,0 +1,1 @@
+cmd_drivers/battery/built-in.o :=  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o drivers/battery/built-in.o drivers/battery/sec_battery.o drivers/battery/sec_board-8084.o drivers/battery/max77843_fuelgauge.o drivers/battery/max77843_charger.o 

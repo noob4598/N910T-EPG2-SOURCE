@@ -1,0 +1,1 @@
+cmd_security/sdp/built-in.o :=  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o security/sdp/built-in.o security/sdp/dek.o security/sdp/dek_aes.o security/sdp/sdp_mm.o security/sdp/pub_crypto_emul.o security/sdp/dek_sysfs.o security/sdp/cache_cleanup.o security/sdp/kek_pack.o security/sdp/fs_handler.o security/sdp/sdp_dlp.o 

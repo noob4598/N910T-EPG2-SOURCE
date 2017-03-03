@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-msm/qdsp6v2/built-in.o :=  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o arch/arm/mach-msm/qdsp6v2/built-in.o arch/arm/mach-msm/qdsp6v2/ultrasound/built-in.o 

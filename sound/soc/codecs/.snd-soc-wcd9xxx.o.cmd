@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-wcd9xxx.o := /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o sound/soc/codecs/snd-soc-wcd9xxx.o sound/soc/codecs/wcd9xxx-resmgr.o sound/soc/codecs/wcd9xxx-mbhc.o sound/soc/codecs/wcd9xxx-common.o 

@@ -1,4 +1,4 @@
-cmd_kernel/sysctl_binary.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/arm-linux-androideabi-gcc -Wp,-MD,kernel/.sysctl_binary.o.d  -nostdinc -isystem /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/../lib/gcc/arm-linux-androideabi/4.9.4/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=apcs-gnu -mno-thumb-interwork -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(sysctl_binary)"  -D"KBUILD_MODNAME=KBUILD_STR(sysctl_binary)" -c -o kernel/sysctl_binary.o kernel/sysctl_binary.c
+cmd_kernel/sysctl_binary.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,kernel/.sysctl_binary.o.d  -nostdinc -isystem /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(sysctl_binary)"  -D"KBUILD_MODNAME=KBUILD_STR(sysctl_binary)" -c -o kernel/.tmp_sysctl_binary.o kernel/sysctl_binary.c
 
 source_kernel/sysctl_binary.o := kernel/sysctl_binary.c
 
@@ -52,7 +52,7 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/lib/gcc/arm-linux-androideabi/4.9.4/include/stdarg.h \
+  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
@@ -105,15 +105,6 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/deferred/initcalls.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
-  include/linux/string.h \
-    $(wildcard include/config/binary/printf.h) \
-  include/uapi/linux/string.h \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
-  include/linux/errno.h \
-  include/uapi/linux/errno.h \
-  arch/arm/include/generated/asm/errno.h \
-  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
-  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
   include/uapi/linux/kernel.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/sysinfo.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/div64.h \
@@ -170,20 +161,50 @@ deps_kernel/sysctl_binary.o := \
   /home/gene/Android/kernel/epg2/include/uapi/linux/const.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  include/linux/spinlock_types_up.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
-  include/linux/spinlock_up.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock.h \
+    $(wildcard include/config/msm/krait/wfe/fixup.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
-  include/linux/spinlock_api_up.h \
+  include/linux/spinlock_api_smp.h \
+    $(wildcard include/config/inline/spin/lock.h) \
+    $(wildcard include/config/inline/spin/lock/bh.h) \
+    $(wildcard include/config/inline/spin/lock/irq.h) \
+    $(wildcard include/config/inline/spin/lock/irqsave.h) \
+    $(wildcard include/config/inline/spin/trylock.h) \
+    $(wildcard include/config/inline/spin/trylock/bh.h) \
+    $(wildcard include/config/uninline/spin/unlock.h) \
+    $(wildcard include/config/inline/spin/unlock/bh.h) \
+    $(wildcard include/config/inline/spin/unlock/irq.h) \
+    $(wildcard include/config/inline/spin/unlock/irqrestore.h) \
+  include/linux/rwlock_api_smp.h \
+    $(wildcard include/config/inline/read/lock.h) \
+    $(wildcard include/config/inline/write/lock.h) \
+    $(wildcard include/config/inline/read/lock/bh.h) \
+    $(wildcard include/config/inline/write/lock/bh.h) \
+    $(wildcard include/config/inline/read/lock/irq.h) \
+    $(wildcard include/config/inline/write/lock/irq.h) \
+    $(wildcard include/config/inline/read/lock/irqsave.h) \
+    $(wildcard include/config/inline/write/lock/irqsave.h) \
+    $(wildcard include/config/inline/read/trylock.h) \
+    $(wildcard include/config/inline/write/trylock.h) \
+    $(wildcard include/config/inline/read/unlock.h) \
+    $(wildcard include/config/inline/write/unlock.h) \
+    $(wildcard include/config/inline/read/unlock/bh.h) \
+    $(wildcard include/config/inline/write/unlock/bh.h) \
+    $(wildcard include/config/inline/read/unlock/irq.h) \
+    $(wildcard include/config/inline/write/unlock/irq.h) \
+    $(wildcard include/config/inline/read/unlock/irqrestore.h) \
+    $(wildcard include/config/inline/write/unlock/irqrestore.h) \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
@@ -194,7 +215,6 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
   include/asm-generic/atomic-long.h \
-  include/asm-generic/atomic64.h \
   include/linux/math64.h \
   include/uapi/linux/time.h \
   include/linux/uidgid.h \
@@ -223,6 +243,10 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/debug/per/cpu/maps.h) \
     $(wildcard include/config/disable/obsolete/cpumask/functions.h) \
   include/linux/bitmap.h \
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+  include/uapi/linux/string.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
   include/linux/completion.h \
   include/linux/wait.h \
   arch/arm/include/generated/asm/current.h \
@@ -231,7 +255,7 @@ deps_kernel/sysctl_binary.o := \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
-  include/linux/rcutiny.h \
+  include/linux/rcutree.h \
   include/linux/rbtree.h \
   include/uapi/linux/sysctl.h \
   kernel/../fs/xfs/xfs_sysctl.h \
@@ -267,6 +291,11 @@ deps_kernel/sysctl_binary.o := \
   arch/arm/mach-msm/include/mach/timex.h \
     $(wildcard include/config/have/arch/has/current/timer.h) \
   include/net/checksum.h \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
+  arch/arm/include/generated/asm/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/uaccess.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/memory.h \
     $(wildcard include/config/need/mach/memory/h.h) \
@@ -443,6 +472,7 @@ deps_kernel/sysctl_binary.o := \
   include/asm-generic/cputime_jiffies.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/smp.h \
   include/linux/sem.h \
   include/uapi/linux/sem.h \
   include/linux/ipc.h \
@@ -522,6 +552,11 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/seccomp/filter.h) \
   include/uapi/linux/seccomp.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/seccomp.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/unistd.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/unistd.h \
+    $(wildcard include/config/oabi/compat.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/unistd.h \
   include/linux/rculist.h \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
@@ -705,6 +740,7 @@ deps_kernel/sysctl_binary.o := \
   include/linux/in.h \
   include/uapi/linux/in.h \
   include/uapi/linux/netfilter.h \
+  include/net/flow.h \
   include/linux/ip.h \
   include/uapi/linux/ip.h \
   include/linux/ipv6.h \
@@ -761,7 +797,6 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/ip/dccp.h) \
     $(wildcard include/config/nf/defrag/ipv6.h) \
     $(wildcard include/config/wext/core.h) \
-  include/net/flow.h \
   include/net/netns/core.h \
   include/net/netns/mib.h \
     $(wildcard include/config/xfrm/statistics.h) \
@@ -819,6 +854,12 @@ deps_kernel/sysctl_binary.o := \
   include/linux/nfs_fs_i.h \
   include/net/netns/x_tables.h \
     $(wildcard include/config/bridge/nf/ebtables.h) \
+  include/net/netns/conntrack.h \
+    $(wildcard include/config/nf/conntrack/proc/compat.h) \
+    $(wildcard include/config/nf/conntrack/labels.h) \
+  include/linux/list_nulls.h \
+  include/linux/netfilter/nf_conntrack_tcp.h \
+  include/uapi/linux/netfilter/nf_conntrack_tcp.h \
   include/net/netns/xfrm.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/xfrm.h \
   include/linux/seq_file_net.h \
@@ -831,6 +872,15 @@ deps_kernel/sysctl_binary.o := \
   include/linux/idr.h \
   include/linux/xattr.h \
   include/uapi/linux/xattr.h \
+  include/linux/cgroup_subsys.h \
+    $(wildcard include/config/cgroup/debug.h) \
+    $(wildcard include/config/cgroup/cpuacct.h) \
+    $(wildcard include/config/cgroup/device.h) \
+    $(wildcard include/config/cgroup/freezer.h) \
+    $(wildcard include/config/net/cls/cgroup.h) \
+    $(wildcard include/config/cgroup/perf.h) \
+    $(wildcard include/config/cgroup/hugetlb.h) \
+    $(wildcard include/config/cgroup/bcache.h) \
   include/linux/hardirq.h \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
@@ -855,17 +905,16 @@ deps_kernel/sysctl_binary.o := \
   /home/gene/Android/kernel/epg2/include/uapi/linux/if_packet.h \
   include/linux/if_link.h \
   include/uapi/linux/if_link.h \
+  include/linux/static_key.h \
+  include/linux/jump_label.h \
   include/linux/tcp.h \
     $(wildcard include/config/tcp/md5sig.h) \
   include/net/sock.h \
-  include/linux/list_nulls.h \
   include/linux/uaccess.h \
   include/linux/memcontrol.h \
     $(wildcard include/config/memcg/swap.h) \
     $(wildcard include/config/inet.h) \
-  include/linux/jump_label.h \
   include/linux/res_counter.h \
-  include/linux/static_key.h \
   include/linux/aio.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/aio_abi.h \
   include/linux/filter.h \
@@ -903,16 +952,31 @@ deps_kernel/sysctl_binary.o := \
     $(wildcard include/config/firewire/net.h) \
   include/uapi/linux/if_arp.h \
   include/linux/hash.h \
+  include/net/netfilter/nf_conntrack.h \
+    $(wildcard include/config/netfilter/debug.h) \
+    $(wildcard include/config/ip/nf/target/nattype.h) \
+    $(wildcard include/config/nf/conntrack/mark.h) \
+    $(wildcard include/config/nf/conntrack/secmark.h) \
+  include/linux/netfilter/nf_conntrack_common.h \
+  include/uapi/linux/netfilter/nf_conntrack_common.h \
+  include/linux/netfilter/nf_conntrack_dccp.h \
+  include/net/netfilter/nf_conntrack_tuple.h \
+  include/linux/netfilter/x_tables.h \
+  include/uapi/linux/netfilter/x_tables.h \
+  include/linux/netfilter_ipv4.h \
+  include/uapi/linux/netfilter_ipv4.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/netfilter/nf_conntrack_sctp.h \
+  include/linux/netfilter/nf_conntrack_proto_gre.h \
+  include/net/netfilter/ipv6/nf_conntrack_icmpv6.h \
+  include/net/netfilter/ipv4/nf_conntrack_ipv4.h \
+  include/net/netfilter/ipv6/nf_conntrack_ipv6.h \
   include/linux/syscalls.h \
     $(wildcard include/config/ftrace/syscalls.h) \
     $(wildcard include/config/old/sigsuspend.h) \
     $(wildcard include/config/old/sigsuspend3.h) \
     $(wildcard include/config/clone/backwards.h) \
     $(wildcard include/config/clone/backwards3.h) \
-  /home/gene/Android/kernel/epg2/include/uapi/linux/unistd.h \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/unistd.h \
-    $(wildcard include/config/oabi/compat.h) \
-  /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/unistd.h \
   include/trace/syscall.h \
   include/linux/tracepoint.h \
   include/linux/ftrace_event.h \
@@ -922,9 +986,12 @@ deps_kernel/sysctl_binary.o := \
   include/linux/perf_event.h \
     $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/function/tracer.h) \
-    $(wildcard include/config/cgroup/perf.h) \
     $(wildcard include/config/cpu/sup/intel.h) \
   include/uapi/linux/perf_event.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/perf_event.h \
+    $(wildcard include/config/hw/perf/events.h) \
+  arch/arm/include/generated/asm/local64.h \
+  include/asm-generic/local64.h \
   include/linux/pid_namespace.h \
     $(wildcard include/config/pid/ns.h) \
   include/linux/ftrace.h \

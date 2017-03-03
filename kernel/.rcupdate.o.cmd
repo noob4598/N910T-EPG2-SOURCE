@@ -1,4 +1,4 @@
-cmd_kernel/rcupdate.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/arm-linux-androideabi-gcc -Wp,-MD,kernel/.rcupdate.o.d  -nostdinc -isystem /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/bin/../lib/gcc/arm-linux-androideabi/4.9.4/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=apcs-gnu -mno-thumb-interwork -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(rcupdate)"  -D"KBUILD_MODNAME=KBUILD_STR(rcupdate)" -c -o kernel/rcupdate.o kernel/rcupdate.c
+cmd_kernel/rcupdate.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,kernel/.rcupdate.o.d  -nostdinc -isystem /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(rcupdate)"  -D"KBUILD_MODNAME=KBUILD_STR(rcupdate)" -c -o kernel/.tmp_rcupdate.o kernel/rcupdate.c
 
 source_kernel/rcupdate.o := kernel/rcupdate.c
 
@@ -52,7 +52,7 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/gene/Android/toolchains/arm-linux-androideabi-4.9-cortex-a15/lib/gcc/arm-linux-androideabi/4.9.4/include/stdarg.h \
+  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
@@ -106,15 +106,6 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/deferred/initcalls.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
-  include/linux/string.h \
-    $(wildcard include/config/binary/printf.h) \
-  include/uapi/linux/string.h \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
-  include/linux/errno.h \
-  include/uapi/linux/errno.h \
-  arch/arm/include/generated/asm/errno.h \
-  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
-  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
   include/uapi/linux/kernel.h \
   /home/gene/Android/kernel/epg2/include/uapi/linux/sysinfo.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/div64.h \
@@ -166,19 +157,49 @@ deps_kernel/rcupdate.o := \
   /home/gene/Android/kernel/epg2/include/uapi/linux/const.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  include/linux/spinlock_types_up.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
   include/linux/rwlock_types.h \
-  include/linux/spinlock_up.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock.h \
+    $(wildcard include/config/msm/krait/wfe/fixup.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
-  include/linux/spinlock_api_up.h \
+  include/linux/spinlock_api_smp.h \
+    $(wildcard include/config/inline/spin/lock.h) \
+    $(wildcard include/config/inline/spin/lock/bh.h) \
+    $(wildcard include/config/inline/spin/lock/irq.h) \
+    $(wildcard include/config/inline/spin/lock/irqsave.h) \
+    $(wildcard include/config/inline/spin/trylock.h) \
+    $(wildcard include/config/inline/spin/trylock/bh.h) \
+    $(wildcard include/config/uninline/spin/unlock.h) \
+    $(wildcard include/config/inline/spin/unlock/bh.h) \
+    $(wildcard include/config/inline/spin/unlock/irq.h) \
+    $(wildcard include/config/inline/spin/unlock/irqrestore.h) \
+  include/linux/rwlock_api_smp.h \
+    $(wildcard include/config/inline/read/lock.h) \
+    $(wildcard include/config/inline/write/lock.h) \
+    $(wildcard include/config/inline/read/lock/bh.h) \
+    $(wildcard include/config/inline/write/lock/bh.h) \
+    $(wildcard include/config/inline/read/lock/irq.h) \
+    $(wildcard include/config/inline/write/lock/irq.h) \
+    $(wildcard include/config/inline/read/lock/irqsave.h) \
+    $(wildcard include/config/inline/write/lock/irqsave.h) \
+    $(wildcard include/config/inline/read/trylock.h) \
+    $(wildcard include/config/inline/write/trylock.h) \
+    $(wildcard include/config/inline/read/unlock.h) \
+    $(wildcard include/config/inline/write/unlock.h) \
+    $(wildcard include/config/inline/read/unlock/bh.h) \
+    $(wildcard include/config/inline/write/unlock/bh.h) \
+    $(wildcard include/config/inline/read/unlock/irq.h) \
+    $(wildcard include/config/inline/write/unlock/irq.h) \
+    $(wildcard include/config/inline/read/unlock/irqrestore.h) \
+    $(wildcard include/config/inline/write/unlock/irqrestore.h) \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
@@ -189,9 +210,13 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
   include/asm-generic/atomic-long.h \
-  include/asm-generic/atomic64.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
+  arch/arm/include/generated/asm/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/hotplug/cpu.h) \
@@ -201,6 +226,11 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/nr/cpus.h) \
     $(wildcard include/config/base/small.h) \
   include/linux/bitmap.h \
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+  include/uapi/linux/string.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/string.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/smp.h \
   include/linux/interrupt.h \
     $(wildcard include/config/generic/hardirqs.h) \
     $(wildcard include/config/pm/sleep.h) \
@@ -410,7 +440,7 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/rcu/torture/test.h) \
     $(wildcard include/config/rcu/user/qs.h) \
     $(wildcard include/config/rcu/nocb/cpu.h) \
-  include/linux/rcutiny.h \
+  include/linux/rcutree.h \
   include/uapi/linux/sem.h \
   include/linux/ipc.h \
   include/linux/uidgid.h \
@@ -476,6 +506,11 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/seccomp/filter.h) \
   include/uapi/linux/seccomp.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/seccomp.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/unistd.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/unistd.h \
+    $(wildcard include/config/oabi/compat.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/unistd.h \
   include/linux/rculist.h \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
@@ -578,6 +613,157 @@ deps_kernel/rcupdate.o := \
     $(wildcard include/config/modules/use/elf/rela.h) \
   include/trace/events/rcu.h \
   include/trace/define_trace.h \
+  include/trace/ftrace.h \
+  include/linux/ftrace_event.h \
+  include/linux/ring_buffer.h \
+    $(wildcard include/config/ring/buffer/allow/swap.h) \
+  include/linux/kmemcheck.h \
+  include/linux/mm.h \
+    $(wildcard include/config/fix/movable/zone.h) \
+    $(wildcard include/config/x86.h) \
+    $(wildcard include/config/ppc.h) \
+    $(wildcard include/config/parisc.h) \
+    $(wildcard include/config/metag.h) \
+    $(wildcard include/config/ksm.h) \
+    $(wildcard include/config/debug/vm/rb.h) \
+    $(wildcard include/config/arch/uses/numa/prot/none.h) \
+    $(wildcard include/config/debug/pagealloc.h) \
+    $(wildcard include/config/hibernation.h) \
+    $(wildcard include/config/use/user/accessible/timers.h) \
+  include/linux/debug_locks.h \
+    $(wildcard include/config/debug/locking/api/selftests.h) \
+  include/linux/range.h \
+  include/linux/bit_spinlock.h \
+  include/linux/shrinker.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable.h \
+    $(wildcard include/config/highpte.h) \
+    $(wildcard include/config/tima/rkp/l2/group.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/proc-fns.h \
+    $(wildcard include/config/tima/rkp/l2/tables.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/glue-proc.h \
+    $(wildcard include/config/cpu/arm7tdmi.h) \
+    $(wildcard include/config/cpu/arm720t.h) \
+    $(wildcard include/config/cpu/arm740t.h) \
+    $(wildcard include/config/cpu/arm9tdmi.h) \
+    $(wildcard include/config/cpu/arm920t.h) \
+    $(wildcard include/config/cpu/arm922t.h) \
+    $(wildcard include/config/cpu/arm925t.h) \
+    $(wildcard include/config/cpu/arm926t.h) \
+    $(wildcard include/config/cpu/arm940t.h) \
+    $(wildcard include/config/cpu/arm946e.h) \
+    $(wildcard include/config/cpu/arm1020.h) \
+    $(wildcard include/config/cpu/arm1020e.h) \
+    $(wildcard include/config/cpu/arm1022.h) \
+    $(wildcard include/config/cpu/arm1026.h) \
+    $(wildcard include/config/cpu/mohawk.h) \
+    $(wildcard include/config/cpu/feroceon.h) \
+    $(wildcard include/config/cpu/v6k.h) \
+    $(wildcard include/config/cpu/v7.h) \
+    $(wildcard include/config/cpu/pj4b.h) \
+  include/asm-generic/pgtable-nopud.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable-hwdef.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable-2level-hwdef.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable-2level.h \
+    $(wildcard include/config/tima/rkp.h) \
+    $(wildcard include/config/tima/rkp/l1/tables.h) \
+    $(wildcard include/config/tima/rkp/lazy/mmu.h) \
+  include/asm-generic/pgtable.h \
+  include/linux/page-flags.h \
+    $(wildcard include/config/pageflags/extended.h) \
+    $(wildcard include/config/arch/uses/pg/uncached.h) \
+    $(wildcard include/config/memory/failure.h) \
+    $(wildcard include/config/scfs/lower/pagecache/invalidation.h) \
+    $(wildcard include/config/swap.h) \
+  include/linux/huge_mm.h \
+  include/linux/vmstat.h \
+    $(wildcard include/config/vm/event/counters.h) \
+  include/linux/vm_event_item.h \
+    $(wildcard include/config/migration.h) \
+  include/linux/poll.h \
+  include/linux/fs.h \
+    $(wildcard include/config/fs/posix/acl.h) \
+    $(wildcard include/config/quota.h) \
+    $(wildcard include/config/fsnotify.h) \
+    $(wildcard include/config/ima.h) \
+    $(wildcard include/config/debug/writecount.h) \
+    $(wildcard include/config/file/locking.h) \
+    $(wildcard include/config/fs/xip.h) \
+  include/linux/kdev_t.h \
+  include/uapi/linux/kdev_t.h \
+  include/linux/dcache.h \
+  include/linux/rculist_bl.h \
+  include/linux/list_bl.h \
+  include/linux/path.h \
+  include/linux/radix-tree.h \
+  include/linux/semaphore.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/fiemap.h \
+  include/linux/migrate_mode.h \
+  include/linux/percpu-rwsem.h \
+  include/linux/blk_types.h \
+    $(wildcard include/config/blk/cgroup.h) \
+    $(wildcard include/config/blk/dev/integrity.h) \
+  include/uapi/linux/fs.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/limits.h \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/ioctl.h \
+  arch/arm/include/generated/asm/ioctl.h \
+  include/asm-generic/ioctl.h \
+  include/uapi/asm-generic/ioctl.h \
+  include/linux/quota.h \
+    $(wildcard include/config/quota/netlink/interface.h) \
+  /home/gene/Android/kernel/epg2/include/uapi/linux/dqblk_xfs.h \
+  include/linux/dqblk_v1.h \
+  include/linux/dqblk_v2.h \
+  include/linux/dqblk_qtree.h \
+  include/linux/projid.h \
+  include/uapi/linux/quota.h \
+  include/linux/nfs_fs_i.h \
+  include/linux/fcntl.h \
+  include/uapi/linux/fcntl.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/uapi/asm/fcntl.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/fcntl.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/uaccess.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/unified.h \
+    $(wildcard include/config/arm/asm/unified.h) \
+  include/uapi/linux/poll.h \
+  arch/arm/include/generated/asm/poll.h \
+  /home/gene/Android/kernel/epg2/include/uapi/asm-generic/poll.h \
+  include/linux/trace_seq.h \
+  include/linux/perf_event.h \
+    $(wildcard include/config/function/tracer.h) \
+    $(wildcard include/config/cgroup/perf.h) \
+    $(wildcard include/config/cpu/sup/intel.h) \
+  include/uapi/linux/perf_event.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/perf_event.h \
+    $(wildcard include/config/hw/perf/events.h) \
+  arch/arm/include/generated/asm/local64.h \
+  include/asm-generic/local64.h \
+  include/linux/pid_namespace.h \
+    $(wildcard include/config/pid/ns.h) \
+  include/linux/nsproxy.h \
+  include/linux/ftrace.h \
+    $(wildcard include/config/have/function/trace/mcount/test.h) \
+    $(wildcard include/config/dynamic/ftrace/with/regs.h) \
+    $(wildcard include/config/dynamic/ftrace.h) \
+    $(wildcard include/config/stack/tracer.h) \
+    $(wildcard include/config/frame/pointer.h) \
+    $(wildcard include/config/ftrace/syscalls.h) \
+  include/linux/trace_clock.h \
+  arch/arm/include/generated/asm/trace_clock.h \
+  include/asm-generic/trace_clock.h \
+  include/linux/kallsyms.h \
+  include/linux/ptrace.h \
+  include/uapi/linux/ptrace.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/ftrace.h \
+    $(wildcard include/config/old/mcount.h) \
+  include/linux/irq_work.h \
+    $(wildcard include/config/irq/work.h) \
+  include/linux/perf_regs.h \
+    $(wildcard include/config/have/perf/regs.h) \
+  arch/arm/include/generated/asm/local.h \
+  include/asm-generic/local.h \
+  include/linux/coresight-stm.h \
+    $(wildcard include/config/coresight/stm.h) \
+  include/uapi/linux/coresight-stm.h \
   kernel/rcu.h \
 
 kernel/rcupdate.o: $(deps_kernel/rcupdate.o)

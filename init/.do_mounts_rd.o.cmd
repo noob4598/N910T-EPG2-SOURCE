@@ -1,4 +1,4 @@
-cmd_init/do_mounts_rd.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/Android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,init/.do_mounts_rd.o.d  -nostdinc -isystem /home/gene/Android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(do_mounts_rd)"  -D"KBUILD_MODNAME=KBUILD_STR(mounts)" -c -o init/.tmp_do_mounts_rd.o init/do_mounts_rd.c
+cmd_init/do_mounts_rd.o := /home/gene/Android/kernel/epg2/scripts/gcc-wrapper.py /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-gcc -Wp,-MD,init/.do_mounts_rd.o.d  -nostdinc -isystem /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/../lib/gcc/arm-eabi/4.9.3/include -I/home/gene/Android/kernel/epg2/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/gene/Android/kernel/epg2/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/gene/Android/kernel/epg2/include/uapi -Iinclude/generated/uapi -include /home/gene/Android/kernel/epg2/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -w -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -mcpu=cortex-a15 -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(do_mounts_rd)"  -D"KBUILD_MODNAME=KBUILD_STR(mounts)" -c -o init/.tmp_do_mounts_rd.o init/do_mounts_rd.c
 
 source_init/do_mounts_rd.o := init/do_mounts_rd.c
 
@@ -12,7 +12,7 @@ deps_init/do_mounts_rd.o := \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/gene/Android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
+  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/lib/gcc/arm-eabi/4.9.3/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
@@ -166,19 +166,49 @@ deps_init/do_mounts_rd.o := \
     $(wildcard include/config/outer/cache.h) \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  include/linux/spinlock_types_up.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
-  include/linux/spinlock_up.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/spinlock.h \
+    $(wildcard include/config/msm/krait/wfe/fixup.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
-  include/linux/spinlock_api_up.h \
+  include/linux/spinlock_api_smp.h \
+    $(wildcard include/config/inline/spin/lock.h) \
+    $(wildcard include/config/inline/spin/lock/bh.h) \
+    $(wildcard include/config/inline/spin/lock/irq.h) \
+    $(wildcard include/config/inline/spin/lock/irqsave.h) \
+    $(wildcard include/config/inline/spin/trylock.h) \
+    $(wildcard include/config/inline/spin/trylock/bh.h) \
+    $(wildcard include/config/uninline/spin/unlock.h) \
+    $(wildcard include/config/inline/spin/unlock/bh.h) \
+    $(wildcard include/config/inline/spin/unlock/irq.h) \
+    $(wildcard include/config/inline/spin/unlock/irqrestore.h) \
+  include/linux/rwlock_api_smp.h \
+    $(wildcard include/config/inline/read/lock.h) \
+    $(wildcard include/config/inline/write/lock.h) \
+    $(wildcard include/config/inline/read/lock/bh.h) \
+    $(wildcard include/config/inline/write/lock/bh.h) \
+    $(wildcard include/config/inline/read/lock/irq.h) \
+    $(wildcard include/config/inline/write/lock/irq.h) \
+    $(wildcard include/config/inline/read/lock/irqsave.h) \
+    $(wildcard include/config/inline/write/lock/irqsave.h) \
+    $(wildcard include/config/inline/read/trylock.h) \
+    $(wildcard include/config/inline/write/trylock.h) \
+    $(wildcard include/config/inline/read/unlock.h) \
+    $(wildcard include/config/inline/write/unlock.h) \
+    $(wildcard include/config/inline/read/unlock/bh.h) \
+    $(wildcard include/config/inline/write/unlock/bh.h) \
+    $(wildcard include/config/inline/read/unlock/irq.h) \
+    $(wildcard include/config/inline/write/unlock/irq.h) \
+    $(wildcard include/config/inline/read/unlock/irqrestore.h) \
+    $(wildcard include/config/inline/write/unlock/irqrestore.h) \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
@@ -230,7 +260,7 @@ deps_init/do_mounts_rd.o := \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
-  include/linux/rcutiny.h \
+  include/linux/rcutree.h \
   include/linux/rculist_bl.h \
   include/linux/list_bl.h \
   include/linux/bit_spinlock.h \
@@ -274,6 +304,7 @@ deps_init/do_mounts_rd.o := \
   arch/arm/include/generated/asm/errno.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno.h \
   /home/gene/Android/kernel/epg2/include/uapi/asm-generic/errno-base.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/smp.h \
   include/linux/pfn.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
@@ -381,6 +412,10 @@ deps_init/do_mounts_rd.o := \
     $(wildcard include/config/phys/offset.h) \
     $(wildcard include/config/virt/to/bus.h) \
   include/linux/sizes.h \
+  arch/arm/mach-msm/include/mach/memory.h \
+    $(wildcard include/config/cache/l2x0.h) \
+    $(wildcard include/config/arch/msm/scorpion.h) \
+    $(wildcard include/config/arch/msm/krait.h) \
   include/asm-generic/memory_model.h \
   include/asm-generic/getorder.h \
   include/linux/memory_hotplug.h \
@@ -408,6 +443,8 @@ deps_init/do_mounts_rd.o := \
   include/uapi/asm-generic/param.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/timex.h \
     $(wildcard include/config/arch/multiplatform.h) \
+  arch/arm/mach-msm/include/mach/timex.h \
+    $(wildcard include/config/have/arch/has/current/timer.h) \
   include/linux/topology.h \
     $(wildcard include/config/sched/smt.h) \
     $(wildcard include/config/sched/mc.h) \
@@ -585,6 +622,10 @@ deps_init/do_mounts_rd.o := \
   include/linux/ioport.h \
   include/linux/klist.h \
   include/linux/pinctrl/devinfo.h \
+  include/linux/pinctrl/consumer.h \
+    $(wildcard include/config/pinconf.h) \
+  include/linux/seq_file.h \
+  include/linux/pinctrl/pinctrl-state.h \
   include/linux/pm.h \
     $(wildcard include/config/vt/console/sleep.h) \
     $(wildcard include/config/pm.h) \
@@ -687,6 +728,9 @@ deps_init/do_mounts_rd.o := \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/cachetype.h \
     $(wildcard include/config/cpu/cache/vivt.h) \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/kmap_types.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/highmem.h \
+    $(wildcard include/config/cpu/tlb/v6.h) \
+    $(wildcard include/config/arm/errata/798181.h) \
   include/linux/hugetlb_inline.h \
   include/linux/backing-dev.h \
     $(wildcard include/config/debug/fs.h) \
@@ -708,6 +752,7 @@ deps_init/do_mounts_rd.o := \
     $(wildcard include/config/generic/pci/iomap.h) \
   include/linux/msm_rtb.h \
     $(wildcard include/config/msm/rtb.h) \
+  arch/arm/mach-msm/include/mach/io.h \
   include/linux/bsg.h \
   include/uapi/linux/bsg.h \
   /home/gene/Android/kernel/epg2/arch/arm/include/asm/scatterlist.h \
@@ -732,17 +777,10 @@ deps_init/do_mounts_rd.o := \
   include/linux/static_key.h \
   include/linux/jump_label.h \
     $(wildcard include/config/jump/label.h) \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/jump_label.h \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/system.h \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/switch_to.h \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/system_info.h \
-    $(wildcard include/config/sec/debug/subsys.h) \
-  /home/gene/Android/kernel/epg2/arch/arm/include/asm/system_misc.h \
   include/linux/ftrace_event.h \
   include/linux/ring_buffer.h \
     $(wildcard include/config/ring/buffer/allow/swap.h) \
   include/linux/kmemcheck.h \
-  include/linux/seq_file.h \
   include/linux/poll.h \
   include/uapi/linux/poll.h \
   arch/arm/include/generated/asm/poll.h \

@@ -100,6 +100,43 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/have/arch/pfn/valid.h) \
     $(wildcard include/config/memory/hotplug/sparse.h) \
   include/asm-generic/getorder.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable.h \
+    $(wildcard include/config/arm/dma/mem/bufferable.h) \
+    $(wildcard include/config/highpte.h) \
+    $(wildcard include/config/tima/rkp/l2/group.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/proc-fns.h \
+    $(wildcard include/config/tima/rkp/l2/tables.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/glue-proc.h \
+    $(wildcard include/config/cpu/arm7tdmi.h) \
+    $(wildcard include/config/cpu/arm720t.h) \
+    $(wildcard include/config/cpu/arm740t.h) \
+    $(wildcard include/config/cpu/arm9tdmi.h) \
+    $(wildcard include/config/cpu/arm920t.h) \
+    $(wildcard include/config/cpu/arm922t.h) \
+    $(wildcard include/config/cpu/fa526.h) \
+    $(wildcard include/config/cpu/arm925t.h) \
+    $(wildcard include/config/cpu/arm926t.h) \
+    $(wildcard include/config/cpu/arm940t.h) \
+    $(wildcard include/config/cpu/arm946e.h) \
+    $(wildcard include/config/cpu/sa110.h) \
+    $(wildcard include/config/cpu/arm1020.h) \
+    $(wildcard include/config/cpu/arm1020e.h) \
+    $(wildcard include/config/cpu/arm1022.h) \
+    $(wildcard include/config/cpu/arm1026.h) \
+    $(wildcard include/config/cpu/mohawk.h) \
+    $(wildcard include/config/cpu/feroceon.h) \
+    $(wildcard include/config/cpu/v6.h) \
+    $(wildcard include/config/cpu/v6k.h) \
+    $(wildcard include/config/cpu/v7.h) \
+    $(wildcard include/config/cpu/pj4b.h) \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/glue.h \
+  include/asm-generic/pgtable-nopud.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable-hwdef.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable-2level-hwdef.h \
+  /home/gene/Android/kernel/epg2/arch/arm/include/asm/pgtable-2level.h \
+    $(wildcard include/config/tima/rkp.h) \
+    $(wildcard include/config/tima/rkp/l1/tables.h) \
+    $(wildcard include/config/tima/rkp/lazy/mmu.h) \
 
 arch/arm/kernel/vmlinux.lds: $(deps_arch/arm/kernel/vmlinux.lds)
 

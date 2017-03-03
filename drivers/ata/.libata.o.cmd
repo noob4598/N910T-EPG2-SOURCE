@@ -1,0 +1,1 @@
+cmd_drivers/ata/libata.o := /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o drivers/ata/libata.o drivers/ata/libata-core.o drivers/ata/libata-scsi.o drivers/ata/libata-eh.o drivers/ata/libata-transport.o drivers/ata/libata-sff.o drivers/ata/libata-pmp.o 
