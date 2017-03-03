@@ -1,1 +1,0 @@
-cmd_drivers/gpu/msm/built-in.o :=  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o drivers/gpu/msm/built-in.o drivers/gpu/msm/msm_kgsl_core.o drivers/gpu/msm/msm_adreno.o 

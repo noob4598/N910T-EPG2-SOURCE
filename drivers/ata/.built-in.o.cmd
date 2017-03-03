@@ -1,1 +1,0 @@
-cmd_drivers/ata/built-in.o :=  /home/gene/android/toolchains/arm-eabi-4.9-cortex-a15/bin/arm-eabi-ld -EL    -r -o drivers/ata/built-in.o drivers/ata/libata.o drivers/ata/ahci_platform.o drivers/ata/libahci.o drivers/ata/ahci_msm.o 

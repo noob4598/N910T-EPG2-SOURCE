@@ -1,3 +1,0 @@
-kernel/drivers/motor/max77828_haptic.ko
-kernel/drivers/motor/max77843_haptic.ko
-kernel/drivers/motor/ss_vibrator.ko
