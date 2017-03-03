@@ -118,8 +118,6 @@ kernel/drivers/gpio/gpio-msm-v3.ko
 kernel/drivers/gpio/qpnp-pin.ko
 kernel/drivers/gpu/msm/msm_kgsl_core.ko
 kernel/drivers/gpu/msm/msm_adreno.ko
-kernel/drivers/gud/mcKernelApi.ko
-kernel/drivers/gud/mcDrvModule.ko
 kernel/drivers/hid/hid.ko
 kernel/drivers/hid/uhid.ko
 kernel/drivers/hid/hid-generic.ko
@@ -350,9 +348,6 @@ kernel/drivers/scsi/scsi_tgt.ko
 kernel/drivers/scsi/sd_mod.ko
 kernel/drivers/scsi/sg.ko
 kernel/drivers/scsi/ch.ko
-kernel/drivers/scsi/ufs/ufshcd.ko
-kernel/drivers/scsi/ufs/ufshcd-pltfrm.ko
-kernel/drivers/scsi/ufs/ufs_test.ko
 kernel/drivers/sensorhub/atmel/ssp_dev.ko
 kernel/drivers/sensorhub/atmel/ssp_spi.ko
 kernel/drivers/sensorhub/atmel/ssp_data.ko
@@ -382,7 +377,6 @@ kernel/drivers/sensorhub/atmel/max_notchfilter/fixed_iir_filter.ko
 kernel/drivers/slimbus/slim-msm.ko
 kernel/drivers/slimbus/slim-msm-ngd.ko
 kernel/drivers/soc/qcom/mct.ko
-kernel/drivers/soc/qcom/qdsp6v2/adsp-loader.ko
 kernel/drivers/spi/spi_qsd.ko
 kernel/drivers/spmi/spmi-pmic-arb.ko
 kernel/drivers/staging/android/logger.ko
@@ -570,18 +564,14 @@ kernel/net/netfilter/nf_nat_tftp.ko
 kernel/net/netfilter/nf_tproxy_core.ko
 kernel/net/netfilter/x_tables.ko
 kernel/net/netfilter/xt_tcpudp.ko
-kernel/net/netfilter/xt_mark.ko
-kernel/net/netfilter/xt_connmark.ko
 kernel/net/netfilter/xt_nat.ko
 kernel/net/netfilter/xt_CLASSIFY.ko
-kernel/net/netfilter/xt_CONNSECMARK.ko
 kernel/net/netfilter/xt_CT.ko
 kernel/net/netfilter/xt_LOG.ko
 kernel/net/netfilter/xt_NETMAP.ko
 kernel/net/netfilter/xt_NFLOG.ko
 kernel/net/netfilter/xt_NFQUEUE.ko
 kernel/net/netfilter/xt_REDIRECT.ko
-kernel/net/netfilter/xt_SECMARK.ko
 kernel/net/netfilter/xt_TPROXY.ko
 kernel/net/netfilter/xt_TCPMSS.ko
 kernel/net/netfilter/xt_TEE.ko

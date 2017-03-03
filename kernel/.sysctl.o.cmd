@@ -1137,8 +1137,6 @@ deps_kernel/sysctl.o := \
   include/uapi/linux/binfmts.h \
   include/linux/sched/sysctl.h \
   include/scsi/sg.h \
-  include/linux/inotify.h \
-  include/uapi/linux/inotify.h \
 
 kernel/sysctl.o: $(deps_kernel/sysctl.o)
 
